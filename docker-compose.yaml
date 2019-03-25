@@ -1,0 +1,10 @@
+version: "3"
+services:
+  golang:
+    build: .
+    image: hakengineer/testgo
+    container_name: go
+    network_mode: host
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
